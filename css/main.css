@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* -webkit-box-sizing: border-box;
+            box-sizing: border-box; */
+    box-sizing: inherit;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize; /* chữ hoa những chữ cái đầu từng từ */
+    transition: all 0.2s linear;
+  }
+
+html{
+      /* HACK 1rem = 10px*/
+      font-size: 62.5%;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+      /* scroll-padding-top: 5rem; */
+}
+
+/* thanh scrollbar */
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+  
+html::-webkit-scrollbar-track {
+    background: ;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #f00;
+}
+
+:root{
+    --red-color: #f00;
+    --black-color: #000;
+    --white-color: #fff;
+    --light-white-color: #aaa;
+    --light-bg-color: #111;
+}
+
+body {
+    background-color: var(--black-color);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 9%;
+    z-index: 1000;
+    background-color: var(--black-color);
+}
+
+.header .logo{
+    font-weight: bolder;
+    font-size: 3rem;
+    color: var(--white-color);
+}
+
+.header span{
+    color: var(--red-color);
+}
+
+.navbar a{
+    display: inline-block;
+    font-size: 1.7rem;
+    padding: 15px 20px;
+    color: var(--white-color);
+}
+
+.navbar a:hover{
+    background-color: var(--red-color);
+}
+
+.menu-btn{
+    font-size: 3rem;
+    color: var(--white-color);
+    cursor: pointer;
+    display: none;
+}
+
+section{
+    padding: 50px 9%;
+}
+
+.home{
+    padding: 0;
+    margin-top: 48px;
+}
+
+.slide{
+    /* min-height: 70vh; */
+    background-size: cover !important;
+    background-position: center !important;
+    /* padding: 20px 9%; */
+    display: flex;
+    align-items: center;
+}
+.slide_img{
+    width: 100%;
+    height: 70%;
+    
+}
+
+.content_position{
+    position: absolute;
+    padding: 20px 9%;
+
+}
+
+.content{
+    width: 600px;
+}
+
+.content span{
+    font-size: 2rem;
+    color: red;
+    display: block;
+}
+
+.content h3{
+    font-size: 5rem;
+    color: white;
+    padding: 10px 0;
+}
+
+.content p{
+    font-size: 1.5rem;
+    color: var(--light-white-color);
+    padding: 10px 0;
+    line-height: 2;
+}
+
+.btn{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 28px;
+    padding-right: 30px;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(130deg, #f00 93%, transparent 90%);
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+}
+
+.about .image{
+    flex: 1 1 420px;
+    position: relative;
+}
+
+.about .image::after,
+.about .image::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background-color: var(--red-color);
+    height: 150px;
+    width: 150px;
+}
+
+.about .image::before{
+    top: 0;
+    left: 0;
+}
+
+.about .image::after{
+    bottom: 3px;
+    right: -40px;
+}
+
+.about .image img{
+    width: 100%;
+    padding: 20px;
+}
+
+.about .content{
+    flex: 1 1 420px;
+}
+
+.about .content span{
+    font-size: 2rem;
+    color: var(--red-color);
+}
+
+.about .content title{
+    font-size: 4rem;
+    color: var(--white-color);
+    margin-top: 5px;
+}
+
+.about .content .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 10px;
+}
+
+.box-container .box{
+    flex: 1 1 200px;
+}
+
+.box-container h3{
+    font-size: 2rem;
+}
+
+.box-container i{
+    padding-right: 15px;
+    color: var(--red-color);
+}
