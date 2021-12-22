@@ -5,7 +5,7 @@
     padding: 0;
     /* -webkit-box-sizing: border-box;
             box-sizing: border-box; */
-    box-sizing: inherit;
+    box-sizing: border-box;
     text-decoration: none;
     outline: none;
     border: none;
@@ -113,7 +113,7 @@ section{
 .content_position{
     position: absolute;
     padding: 20px 9%;
-
+    box-sizing: content-box;
 }
 
 .content{
@@ -228,7 +228,7 @@ section{
 
 .heading{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 38px;
     position: relative;
 }
 
@@ -253,98 +253,136 @@ section{
     border-radius: 5px;
 }
 
-/* grid */
-.features .box-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
-    gap: 1.5rem;
-    gap: 0;
-  }
-  
-  .features .box-container .box {
-    background: #111;
-  }
-  
-  .features .box-container .box.second {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-flow: column-reverse;
-            flex-flow: column-reverse;
-  }
-  
-  .features .box-container .box:hover .image img {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  
-  .features .box-container .box .image {
-    height: 30rem;
+.box-container .image_main{
     width: 100%;
-    overflow: hidden;
-  }
-  
-  .features .box-container .box .image img {
-    height: 100%;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  
-  .features .box-container .box .content {
-    padding: 2rem;
-    text-align: center;
-    width: 377px;
-  }
-  
-  .features .box-container .box .content img {
-    height: 9rem;
-    margin-bottom: 1rem;
-    -webkit-filter: invert(1);
-            filter: invert(1);
-  }
-  
-  .features .box-container .box .content h3 {
-    font-size: 2rem;
-    color: #f00;
-  }
-  
-  .features .box-container .box .content p {
-    line-height: 2;
-    font-size: 1.5rem;
-    color: #aaa;
-    padding: 1rem 0;
-  }
+}
 
-  .banner {
+.image_main:hover{
+    transform: scale(1.1);
+}
+
+.image_border{
+    background-color: #111111;
+    overflow: hidden;
+}
+
+.content_bgc{
+    background-color: #111111;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.img_logo{
+    height: 90px;
+    margin-bottom: 10px;
+    filter: invert(1);
+}
+
+.content_bgc h3{
+    color: var(--red-color);
+}
+
+.price{
+
+}
+
+.price_wrap{
+
+}
+
+.price_header{
+    font-size: 2rem;
+    color: var(--red-color);
+}
+
+.price_subheader{
+    font-size: 4rem;
+    padding-top: 10px;
+    color: var(--white-color);
+    line-height: 1.4;
+}
+
+.price_des{
+    line-height: 2;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: #aaa;
+}
+
+.price_icon{
+    padding-right: 15px;
+    color: var(--red-color);
+}
+
+.price_heading{
+    font-size: 2.5rem;
+    /* margin: 1rem 0; */
+    color: #fff;
+    display: block;
+    margin: 25px;
+    font-weight: 600;
+}
+
+.price_number{
+    color: #fff;
+    font-size: 2rem;
+    margin: 20px;
+    font-weight: 600;
+}
+
+.price_number-main{
+    font-size: 5rem;
+    font-weight: bolder;
+    color: #f00;
+    margin-right: -6px;
+    margin-left: -3px;
+}
+
+.wrap{
+    padding-right: 17px;
+}
+
+.col_wrap{
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(130deg, #111 93%, transparent 90%);
+}
+
+.wrap_second{
+    text-align: center;
+    padding: 20px;
+}
+
+.banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/banner-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     text-align: center;
-  }
+}
   
-  .banner span {
+.banner span {
     font-size: 2rem;
     color: #f00;
-  }
+}
   
-  .banner h3 {
+.banner h3 {
     padding-top: 1rem;
     color: #fff;
     text-transform: uppercase;
     font-size: 3.5rem;
-  }
+}
   
-  .banner p {
+.banner p {
     margin: 1rem auto;
     max-width: 60rem;
     font-size: 1.5rem;
     color: #aaa;
     line-height: 2;
-  }
+}
   

@@ -12,6 +12,7 @@
     <!-- swiperjs -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> -->
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
@@ -54,7 +55,7 @@
 
                 <!-- <div class="swiper-slide slide" onclick="changeImage()" style="background: url(./images/home-bg-3.jpg) no-repeat;"> -->
                 <div class="swiper-slide slide">
-                    <img class="slide_img" onclick="changeImage()" src="./images/home-bg-2.jpg">
+                    <img class="slide_img" onclick="changeImage()" src="./images/home-bg-1.jpg">
                     <div class="content content_position">
                         <span>be strong, be fit</span>
                         <h3>Make yourself stronger than your excuses.</h3>
@@ -108,47 +109,97 @@
         </h1>
     
         <div class="box-container">
-            <div class="box">
-                <div class="image">
-                    <img src="./images/f-img-1.jpg" alt="">
-                </div>
-                <div class="content">
-                    <img src="./images/icon-1.png" alt="">
-                    <h3>body building</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
-                    <a href="#" class="btn">read more</a>
+            <div class="box row no-gutters">
+               <div class="col l-4 m-4 c-12">
+                    <div class="image image_border">
+                        <img class="image_main" src="./images/f-img-1.jpg" alt="">
+                    </div>
+                    <div class="content content_bgc" style="padding-top: 29px;">
+                        <img class="img_logo" src="./images/icon-1.png" alt="">
+                        <h3>gym for men</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+               </div>
+               <div class="col l-4 m-4 c-12">
+                   <div class="content content_bgc" style="padding-bottom: 29px;">
+                       <img class="img_logo" src="./images/icon-2.png" alt="">
+                       <h3>gym for men</h3>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
+                       <a href="#" class="btn">read more</a>
+                    </div>
+                    <div class="image image_border">
+                        <img class="image_main" src="./images/f-img-2.jpg" alt="">
+                    </div>
+               </div>
+               <div class="col l-4 m-4 c-12">
+                    <div class="image image_border">
+                        <img class="image_main" src="./images/f-img-3.jpg" alt="">
+                    </div>
+                    <div class="content content_bgc" style="padding-top: 29px;">
+                        <img class="img_logo" src="./images/icon-3.png" alt="">
+                        <h3>gym for men</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
                 </div>
             </div>
-    
-            <div class="box second">
-                <div class="image">
-                    <img src="./images/f-img-2.jpg" alt="">
-                </div>
-                <div class="content">
-                    <img src="./images/icon-2.png" alt="">
-                    <h3>gym for men</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
-                    <a href="#" class="btn">read more</a>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="./images/f-img-3.jpg" alt="">
-                </div>
-                <div class="content">
-                    <img src="./images/icon-3.png" alt="">
-                    <h3>gym for women</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
-                    <a href="#" class="btn">read more</a>
-                </div>
-            </div>
-    
         </div>
-    
     </section>
     <!-- features section end -->
 
+    <!-- price section starts  -->
+    <section class="price">
+        <div class="row no-gutters price_wrap">
+            <div class="col l-4 m-4 c-12">
+                <div class="wrap">
+                    <span class="price_header">Pricing Plan</span>
+                    <h3 class="price_subheader">affordable pricing plan for your</h3>
+                    <p class="price_des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolore excepturi ea suscipit fugiat cum quae, rerum optio mollitia! Tempora?</p>
+                    <p class="price_des"><i class="price_icon fas fa-check"></i>Cardio Exercise</p>
+                    <p class="price_des"><i class="price_icon fas fa-check"></i>Weight Lifting</p>
+                    <p class="price_des"><i class="price_icon fas fa-check"></i>Diet Plans</p>
+                    <p class="price_des"><i class="price_icon fas fa-check"></i>Overall Results</p>
+                    <a href="#" class="btn sub_wrap">All Pricing</a>
+                </div>
+            </div>
+            <div class="col l-4 m-4 c-12">
+                <div class="col_wrap">
+                    <span class="price_heading">Basic Plan</span>
+                    <div class="price_number">
+                        <span>$</span>
+                        <span class="price_number-main">30</span>
+                        <span>/Mo</span>
+                    </div>
+                    <p class="price_des"><i class="price_icon fas fa-check"></i>Personal Training</p>
+                    <p class="price_des"><i class="price_icon fas fa-check"></i>Cardio Exercise</p>
+                    <p class="price_des"><i class="price_icon fas fa-check"></i>Weight Lifting</p>
+                    <p class="price_des"><i class="price_icon fas fa-check"></i>Diet Plans</p>
+                    <p class="price_des"><i class="price_icon fas fa-check"></i>Overall Results</p>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+            </div>
+            <div class="col l-4 m-4 c-12">
+                <div class="wrap_second">
+                    <span class="price_heading">Basic Plan</span>
+                    <div class="price_number">
+                        <span>$</span>
+                        <span class="price_number-main">90</span>
+                        <span>/Mo</span>
+                    </div>
+                    <p class="price_des"><i class="price_icon fas fa-check"></i>Personal Training</p>
+                    <p class="price_des"><i class="price_icon fas fa-check"></i>Cardio Exercise</p>
+                    <p class="price_des"><i class="price_icon fas fa-check"></i>Weight Lifting</p>
+                    <p class="price_des"><i class="price_icon fas fa-check"></i>Diet Plans</p>
+                    <p class="price_des"><i class="price_icon fas fa-check"></i>Overall Results</p>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- price section end  -->
+    
     <!-- banner section starts  -->
     <section class="banner">
         <span>join us now</span>
