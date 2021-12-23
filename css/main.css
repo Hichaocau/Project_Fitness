@@ -183,7 +183,7 @@ section{
 
 .about .image::after{
     bottom: 3px;
-    right: -40px;
+    right: 0px;
 }
 
 .about .image img{
@@ -356,6 +356,66 @@ section{
 .wrap_second{
     text-align: center;
     padding: 20px;
+}
+
+.trainer{
+
+}
+
+.trainer_wrap{
+
+}
+
+.trainer_image{
+    position: relative;
+    overflow: hidden;
+}
+
+.trainer_image-detail{
+    width: 100%;
+}
+
+.trainer_infor{
+    background-color: #111111;
+    padding: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    transform: translateY(45%);
+}
+
+.trainer_image:hover .trainer_infor{
+    transform: translateY(0);
+}
+
+.trainer_infor span{
+    font-size: 1.5rem;
+    color: var(--red-color);
+}
+
+.trainer_infor h3{
+    font-size: 2rem;
+    color: var(--white-color);
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+.trainer_infor-socials{
+    padding-top: 20px;
+    margin-top: 15px;
+    border-top: 1px solid #aaa;
+}
+
+.trainer_infor-socials i{
+    font-size: 2rem;
+    color: var(--white-color);
+    margin-right: 15px;
+}
+
+.trainer_infor-socials i:hover{
+    color: var(--red-color);
+    transform: rotate(360deg);
 }
 
 .banner {

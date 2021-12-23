@@ -37,6 +37,7 @@ changeImage = function(){
         "./images/home-bg-5.jpg",
     ];
     document.querySelector('.slide_img').src = imgs[index];
+    // cdThumb.style.backgroundImage = `url('${this.currentSong.image}')`
     index++;
     if(index==3){
         index = 0;
