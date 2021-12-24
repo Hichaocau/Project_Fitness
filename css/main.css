@@ -11,6 +11,7 @@
     border: none;
     text-transform: capitalize; /* chữ hoa những chữ cái đầu từng từ */
     transition: all 0.2s linear;
+    scroll-behavior: smooth;
   }
 
 html{
@@ -445,4 +446,89 @@ section{
     color: #aaa;
     line-height: 2;
 }
+
+.footer{
+
+}
+
+.footer_wrap{
+
+}
+
+.footer_header{
+    font-size: 2.2rem;
+    color: var(--white-color);
+    padding: 12px 0;
+}
+
+.footer_link,
+.footer_time{
+    font-size: 1.5rem;
+    display: block;
+    color: #aaa;
+    padding: 12px 0;
+}
+
+.footer_time i{
+    color: var(--red-color);
+}
+
+.footer_link:hover{
+    color: var(--red-color);
+}
+
+.footer_socials a:hover{
+    background-color: var(--red-color);
+}
+
+.footer_socials{
+    padding: 15px 0;
+}
+
+.footer_socials a{
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    font-size: 1.7rem;
+    color: #fff;
+    background: #111;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    text-align: center;
+}
+
+.footer_link i{
+    padding-right: 8px;
+    color: var(--red-color);
+}
+
+.footer_link-normal:hover{
+    color: #aaa;
+}
+
+.footer_email{
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    background: #111;
+    padding: 15px;
+    font-size: 1.5rem;
+    color: #aaa;
+    text-transform: none;
+}
+
+.credit_wrap{
+    padding: 20px;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: var(--white-color);
+    background-color: #111;
+    text-align: center;
+}
+
+.credit_des span{
+    color: var(--red-color);
+    cursor: pointer;
+}
+
   
