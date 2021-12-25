@@ -447,12 +447,120 @@ section{
     line-height: 2;
 }
 
-.footer{
+.review_wrap{
 
 }
 
-.footer_wrap{
+.review_app{
+    margin-top: 40px;
+}
 
+.review_info span{
+    font-size: 2rem;
+    color: var(--red-color);
+}
+
+.review_info h3{
+    font-size: 3rem;
+    color: #fff;
+    padding-top: 15px;
+}
+
+.review_header p,
+.review_info p{
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #aaa;
+    padding: 15px 0;
+}
+
+.review_subwrap{
+    background: linear-gradient(130deg, #111 93%, transparent 90%);
+    padding: 0 30px;
+    padding-bottom: 20px;
+}
+
+.review_header{
+    padding: 0 20px;
+}
+
+.review_infomation{
+    display: flex;
+    margin-top: 15px;
+}
+
+.review_infomation img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 18px;
+}
+
+.review_infomation i{
+    font-size: 5rem;
+    margin-left: auto;
+    margin-right: 20px;
+    color: #f00;
+}
+
+.review_info-detail h3{
+    font-size: 2rem;
+    color: var(--white-color);
+    display: block;
+    padding: 4px 0;
+}
+
+.review_info-detail span{
+    font-size: 1.5em;
+    color: var(--red-color);
+}
+
+.blog_wrap-img{
+    overflow: hidden;
+}
+
+.blog_img{
+    width: 100%;
+}
+
+.blog_img:hover{
+    transform: scale(1.1);
+}
+
+.blog_info{
+    background-color: #111111;
+    margin-top: -3px;
+    padding: 20px;
+}
+
+.blog_info h3{
+    font-size: 2rem;
+    line-height: 1.5;
+    color: var(--white-color);
+    font-weight: 500;
+}
+
+.blog_info-header{
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+}
+
+.blog_info-header p{
+    color: var(--red-color);
+    display: inline-block;
+}
+
+.blog_info-header span{
+    color: var(--white-color);
+    padding: 0 10px;
+}
+
+.blog_info-des{
+    font-size: 1.5rem;
+    color: #aaa;
+    line-height: 2;
+    padding: 15px 0;
 }
 
 .footer_header{

@@ -353,7 +353,8 @@
 
     .l-6 {
         flex: 0 0 50%;
-        max-width: 50%;
+        max-width: 48%;
+        margin-right: 14px;
     }
 
     .l-7 {
