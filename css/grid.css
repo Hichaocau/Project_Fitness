@@ -351,10 +351,15 @@
         max-width: 41.66667%;
     }
 
-    .l-6 {
+    .l-6-w {
         flex: 0 0 50%;
         max-width: 48%;
         margin-right: 14px;
+    }
+
+    .l-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 
     .l-7 {

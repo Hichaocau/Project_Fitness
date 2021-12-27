@@ -19,20 +19,20 @@
     section{
         padding: 20px 30px;
     }
-    /* .home .slide{
-        /* padding: 20px 5%; */
-    } */
     .home .content{
-        width: 500px;
-    }
-    
-    .about .image{
-        margin-top: 50px;
+        width: 400px;
     }
     .about .content .title{
-        font-size: 5rem;
+        font-size: 3.3rem;
     }
-
+    .content p{
+        padding: 0;
+        line-height: 1.6;
+        /* display: none; */
+    }
+    .about_wrap .btn{
+        /* display: none; */
+    }
 }
 
 /* Tablet */
@@ -45,6 +45,16 @@
     }
     .home .content h3{
         font-size: 4rem;
+    }
+    .about .content span{
+        font-size: 2.5rem;
+    }
+    .box-container .box{
+        flex: 0 1 200px;
+    }
+    .img_logo{
+        height: 50px;
+        margin-bottom: 0;
     }
 }
 
@@ -78,9 +88,17 @@
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
     .home .content{
-        width: 400px;
+        width: 300px;
     }
     .home .content h3{
-        font-size: 3rem;
+        font-size: 2.6rem;
+    }
+    .content span{
+        font-size: 2rem;
+    }
+    .btn {
+        padding: 6px 7px;
+        padding-right: 14px;
+        font-size: 1.4rem;
     }
 }

@@ -117,10 +117,6 @@ section{
     box-sizing: content-box;
 }
 
-.content{
-    width: 600px;
-}
-
 .content span{
     font-size: 3rem;
     color: red;
@@ -163,7 +159,6 @@ section{
 }
 
 .about .image{
-    flex: 1 1 420px;
     position: relative;
 }
 
@@ -192,17 +187,13 @@ section{
     padding: 20px;
 }
 
-.about .content{
-    flex: 1 1 420px;
-}
-
 .about .content span{
     font-size: 3rem;
     color: var(--red-color);
 }
 
 .about .content .title{
-    font-size: 4rem;
+    font-size: 5rem;
     color: var(--white-color);
     margin-top: 5px;
 }
@@ -288,14 +279,6 @@ section{
     color: var(--red-color);
 }
 
-.price{
-
-}
-
-.price_wrap{
-
-}
-
 .price_header{
     font-size: 2rem;
     color: var(--red-color);
@@ -342,10 +325,6 @@ section{
     color: #f00;
     margin-right: -6px;
     margin-left: -3px;
-}
-
-.wrap{
-    padding-right: 17px;
 }
 
 .col_wrap{
